@@ -1,9 +1,105 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Toolbox TP</title>
+  <title>Indentity Access Management</title>
+  <link href="https://fonts.googleapis.com/css?family=Manjari:100,400,700&display=swap&subset=malayalam" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
 <body>
-  <h4>Toolbox TP Landing Page</h4>
+  <header id="identity-access-management-toolbox-home">
+    <a href="/" class="logo">
+      <img src="./assets/logo.png" width="75">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#identity-access-management-toolbox-home" class="active">Home</a></li>
+        <li><a href="#identity-access-management-toolbox-about">About Toolbox</a></li>
+        <li><a href="#identity-access-management-toolbox-features">Features</a></li>
+        <li><a href="#identity-access-management-toolbox-pricing">Pricing</a></li>
+        <li><a href="#identity-access-management-toolbox-contact">Contact</a></li>
+      </ul>
+    </nav>
+    <h4 class="title title-top"><span class="title-toolbox">Toolbox</span> is <span class="title-accessmgt">Indentity Access</span></h4>
+    <h4 class="title-second"><span class="title-accessmgt">Management</span> SaaS product</h4>
+    <h4 class="title-third">that allows easy <span class="title-access">access</span></h4>
+    <h4 class="title-last">to different tools.</h4>
+    <img src="./assets/banner.png" class="banner">
+  </header>
+  <div id="identity-access-management-toolbox-about" class="container about">
+    <ul>
+      <li>All Productivity Tools at one place</li>
+      <li>Jira, Confluence, Trello, TimeOff TS, Basecamp etc</li>
+      <li>No more hussle & search for browser's bookmarks</li>
+    </ul>
+    <p>
+      Currently many organizations use many, if not countless, online services, tools, web apps etc to bring productivity to their employees daily work. 
+    </p>
+    <p>
+      For employees, if it brings productivity on one hand then on the other hand they need to manage all these tools so that they can access them conveniently.
+    </p>
+    <p>
+      The current solution many employees use is the browsers default bookmarks. However, toolbox, bring all these tools at one place. All employees have to do is login to toolbox, where list of all the online services and tools can be viewed they need rather than going through inconvenient browser's default bookmark features they offer.
+    </p>
+  </div>
+  <div id="identity-access-management-toolbox-features" class="container features">
+    <nav>
+      <ul>
+        <li><a id="tools" href="#tools" onclick="toggle_visibility('tools');">Tools Just One Click Away</a></li>
+        <li><a id="searching" href="#searching" onclick="toggle_visibility('searching');">Realtime Search</a></li>
+        <li><a id="adding" href="#adding" onclick="toggle_visibility('adding');">Add More Tools as You Like</a></li>
+        <li><a id="employees" href="#employees" onclick="toggle_visibility('employees');">New Employees? No Worries. Adding Employees Can't Get Easier</a></li>
+      </ul>
+    </nav>
+    <div class="items">
+      <img class="screen tools" src="./assets/tools.png">
+      <img class="hide screen searching" src="./assets/searching.png">
+      <img class="hide screen adding" src="./assets/adding-tools.png">
+      <img class="hide screen employees" src="./assets/adding-employees.png">
+    </div>
+  </div>
+  <div id="identity-access-management-toolbox-pricing" class="pricing">
+    <p>
+      $1 Per Employee <br>
+      Per Month
+    </p>
+  </div>
+  <footer id="identity-access-management-toolbox-contact">
+    <ul>
+      <li><a href="#identity-access-management-toolbox-home">Home</a></li>
+      <li><a href="#identity-access-management-toolbox-about">About Toolbox</a></li>
+      <li><a href="#identity-access-management-toolbox-features">Features</a></li>
+      <li><a href="#identity-access-management-toolbox-pricing">Pricing</a></li>
+      <li><a href="#identity-access-management-toolbox-contact">Contact</a></li>
+    </ul>
+    <ul class="socials">
+      <li><a href=""><img width="50" src="./assets/twitter.png"></a></li>
+      <li><a href=""><img width="50" src="./assets/facebook.png"></a></li>
+      <li><a href=""><img width="50" src="./assets/reddit.png"></a></li>
+      <li><a href=""><img width="50" src="./assets/contact.png"></a></li>
+    </ul>
+  </footer>
+  <script type="text/javascript">
+  <!--
+      function toggle_visibility(el) {
+        console.log(el);
+         var e = document.querySelector(`.${el}`);
+         let items = document.querySelectorAll('.screen');
+         console.log(items);
+         // item.classList.remove('show');
+         // item.classList.add('hide');
+
+         items.forEach(item => {
+           item.classList.remove('show');
+           item.classList.add('hide');
+         });
+
+         // console.log(e.classList.contains('hide'));
+         if (e.classList.contains('hide')) {
+          e.classList.remove('hide');
+          e.classList.add('show');
+         }
+      }
+  //-->
+  </script>
 </body>
 </html>
