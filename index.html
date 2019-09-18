@@ -81,23 +81,18 @@
   <script type="text/javascript">
   <!--
       function toggle_visibility(el) {
-        console.log(el);
-         var e = document.querySelector(`.${el}`);
-         let items = document.querySelectorAll('.screen');
-         console.log(items);
-         // item.classList.remove('show');
-         // item.classList.add('hide');
+       let e = document.querySelector(`.${el}`);
+       let items = document.querySelectorAll('.screen');
 
-         items.forEach(item => {
-           item.classList.remove('show');
-           item.classList.add('hide');
-         });
+       items.forEach(item => {
+         item.classList.remove('show');
+         item.classList.add('hide');
+       });
 
-         // console.log(e.classList.contains('hide'));
-         if (e.classList.contains('hide')) {
-          e.classList.remove('hide');
-          e.classList.add('show');
-         }
+       if (e.classList.contains('hide')) {
+        e.classList.remove('hide');
+        e.classList.add('show');
+       }
       }
   //-->
   </script>
