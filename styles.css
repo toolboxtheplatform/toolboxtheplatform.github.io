@@ -28,6 +28,31 @@ nav {
   text-align: right;
 }
 
+.register-form {
+  position: absolute;
+  width: 35em;
+  top: 34em;
+  left: 10em;
+}
+
+.register-form input {
+  width: 14em;
+  padding: 1.5em;
+  font-size: .8em;
+  border: 1px solid #ccc;
+  border-radius: .3em;
+}
+
+.register-form .btn {
+  position: relative;
+  right: 0em;
+  top: 0;
+  cursor: pointer;
+  font-size: .9em;
+  padding-bottom: 1.2em;
+  border: 1px solid #8800da;
+}
+
 .btn {
   position: absolute;
   right: 4em;
