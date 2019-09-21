@@ -223,13 +223,13 @@ h4.title-last {
 }
 
 .pricing p {
-  padding: 3em 0em;
+  padding: 1.6em 0em;
   text-align: center;
-  font-size: 2em;
-  font-weight: bolder;
+  font-size: 1.3em;
+  font-weight: 400;
   box-shadow: 0 0 0.3em #ccc;
   width: 72%;
-  margin-left: 6em;
+  margin-left: 9em;
 }
 
 footer {
