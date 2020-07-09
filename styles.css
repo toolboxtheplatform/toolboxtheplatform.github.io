@@ -33,6 +33,7 @@ nav {
   width: 35em;
   top: 34em;
   left: 10em;
+  z-index: 100;
 }
 
 .register-form input {
@@ -145,6 +146,7 @@ h4.title-last {
   position: absolute;
   right: 14em;
   top: 10em;
+  z-index: -100;
 }
 
 .container {
@@ -152,7 +154,7 @@ h4.title-last {
 }
 
 .about ul {
-  padding-left: 20em;
+  padding-left: 8em;
   margin-bottom: 4em;
 }
 
@@ -175,7 +177,7 @@ h4.title-last {
 .about p {
   text-align: center;
   width: 60em;
-  padding-left: 20em;
+  padding-left: 8em;
 }
 
 .features {
@@ -190,13 +192,18 @@ h4.title-last {
 }
 
 .features nav ul {
-  padding-left: 10em;
+  padding-left: 0em;
+  text-align: center;
 }
 
 .features nav ul li {
   display: inline-block;
   border-radius: 5em;
   background: #e9f4ff;
+}
+
+.features nav ul li.last {
+  margin-top: 20px;
 }
 
 .features nav ul li a {
@@ -206,7 +213,7 @@ h4.title-last {
 
 .features .items {
   margin-top: 3em;
-  padding-left: 10em;
+  padding-left: 0em;
 }
 
 .features .items img {
